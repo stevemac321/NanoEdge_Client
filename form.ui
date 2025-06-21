@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QPushButton" name="sendNormal">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>91</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit Normal</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendAnom">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send Anomaly</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboPortNumber">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>COM1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM7</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEditReport">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>741</width>
+     <height>551</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBaud">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>115200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>57600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>38400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>19200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9600</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushClear">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>10</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
