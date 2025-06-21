@@ -34,7 +34,7 @@ EKG/
 
 ---
 
-## 📦 Requirements
+## 📦 Requirements  Windows (Linux instructions below)
 
 - Python 3.10 or later
 - PySide6
@@ -42,15 +42,11 @@ EKG/
 
 Install dependencies with:
 
-```bash
+```bash or Powershell
 pip install -r requirements.txt
 ```
 
-Generate the UI form if not already present:
 
-```bash
-pyside6-uic form.ui -o ui_form.py
-```
 
 ---
 
@@ -78,20 +74,6 @@ python widget.py
 
 ---
 
-### 🍎 macOS
-
-```bash
-cd ~/repos/EKG
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python widget.py
-```
-
-Make sure you have Python 3.10+ installed (via Homebrew or pyenv).
-
----
-
 ### 🐧 Linux
 
 ```bash
@@ -101,6 +83,22 @@ source venv/bin/activate
 pip install -r requirements.txt
 python widget.py
 ```
+### 🧭 COM Port Configuration
+
+This project uses serial communication over a USB virtual COM port. The port name varies by platform:
+
+- **Windows**: Usually `COM4` or another `COMx` device  
+- **Linux**: Typically `/dev/ttyACM0` or `/dev/ttyUSB0`
+
+#### To Identify the Port on Linux:
+```bash
+dmesg | grep tty
+# or
+ls /dev/ttyACM*
+```
+
+Make sure to update the Python client or GUI with the correct port string for your system.  
+Cross-platform port detection may be added in the future.
 
 You may need extra system packages like:
 
